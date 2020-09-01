@@ -1,17 +1,18 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import styles from './styles.module.scss';
 
 const ProfileDescription = ({ name, tag, location, avatar }) => {
     return (
-        <div className="description">
+        <div className={styles.description}>
             <img
                 src={avatar}
                 alt="user avatar"
-                className="avatar"
+                className={styles.avatar}
             />
-            <p className="name">{name}</p>
-            <p className="tag">@{tag}</p>
-            <p className="location">{location}</p>
+            <p className={styles.name}>{name}</p>
+            <p className={styles.tag}>@{tag}</p>
+            <p className={styles.location}>{location}</p>
         </div>
     )
 };
