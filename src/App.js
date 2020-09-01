@@ -4,6 +4,8 @@ import user from './data/user.json';
 import Profile from './components/Profile';
 import Statistics from './components/Statistics';
 import statisticalData from './data/statistical-data.json';
+import FriendList from './components/FriendList';
+import friendsData from './data/friends.json';
 
 function App() {
   return (
@@ -17,6 +19,7 @@ function App() {
       <Statistics
         title="Upload stats"
         stats={statisticalData} />
+      <FriendList friends={friendsData} />
     </div>
   );
 }
