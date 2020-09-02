@@ -5,7 +5,7 @@ import styles from './styles.module.scss';
 
 const Profile = ({ name, tag, location, avatar, stats }) => {
     return (
-        <div className={styles.profile}>
+        <div className={['widget-cont', styles.profile].join(' ')}>
             <ProfileDescription
                 name={name}
                 tag={tag}

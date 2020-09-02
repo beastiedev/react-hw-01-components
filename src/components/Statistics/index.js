@@ -5,7 +5,7 @@ import styles from './styles.module.scss';
 
 const Statistics = ({ title, stats }) => {
     return (
-        <section className={styles.statistics}>
+        <section className={['widget-cont', styles.statistics].join(' ')}>
             <h2 className={styles.title}>{title}</h2>
 
             <ul className={styles.statList}>

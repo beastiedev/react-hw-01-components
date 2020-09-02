@@ -12,7 +12,7 @@ import transactionData from './data/transactions.json';
 function App() {
   return (
     <div className="App">
-      <div className="wrap">
+      <div>
         <Profile
           name={user.name}
           tag={user.tag}
@@ -23,13 +23,8 @@ function App() {
           title="Upload stats"
           stats={statisticalData} />
       </div>
-      <div className="wrap">
-        <FriendList friends={friendsData} />
-      </div>
-      <div className="wrap wrap-out">
-        <TransactionHistory items={transactionData} />
-      </div>
-
+      <FriendList friends={friendsData} />
+      <TransactionHistory items={transactionData} />
     </div>
   );
 }

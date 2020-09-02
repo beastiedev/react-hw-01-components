@@ -5,7 +5,7 @@ import styles from './styles.module.scss';
 
 const TransactionHistory = ({ items }) => {
     return (
-        <table className={styles.transactionHistory}>
+        <table className={['widget-cont', styles.transactionHistory].join(' ')}>
             <thead>
                 <tr>
                     <th>Type</th>

@@ -6,7 +6,7 @@ import styles from './styles.module.scss';
 
 const FriendList = ({ friends }) => {
     return (
-        <ul className={styles.friendList}>
+        <ul className={['widget-cont', styles.friendList].join(' ')}>
             {friends.map(friend => <FriendListItem
                 key={friend.id}
                 avatar={friend.avatar}
